@@ -4,7 +4,7 @@ import Item from '../Item/Item'
 
 const Popular = () => {
   const [popularProducts, setPopularProducts] = useState([]);
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
   useEffect(() => {
     fetch(`${BASE_URL}/popular`)
