@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './CSS/LoginSignup.css';
 
+    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
+
 const LoginSignup = () => {
   const [state, setState] = useState('Login');
   const [formData, setFormData] = useState({
@@ -12,7 +14,6 @@ const LoginSignup = () => {
   const changeHandler = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
   const login = async () => {
     console.log('Login Func executed', formData);
