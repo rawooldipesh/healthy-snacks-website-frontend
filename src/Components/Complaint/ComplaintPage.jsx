@@ -7,11 +7,11 @@ const ComplaintPage = () => {
     const [username, setUsername] = useState('');
     const [userEmail, setUserEmail] = useState(''); // State for user email
     const navigate = useNavigate();
+    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
     // Fetch the username and email from the backend using the token
     useEffect(() => {
         const authToken = localStorage.getItem('auth-token');
-        const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
         if (authToken) {
 

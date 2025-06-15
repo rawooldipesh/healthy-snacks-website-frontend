@@ -4,6 +4,9 @@ import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
 import CheckoutForm from '../Checkout/CheckoutForm';
 
+
+            const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
+
 const CartItems = () => {
     const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
     const [showCheckoutForm, setShowCheckoutForm] = useState(false);
@@ -29,7 +32,6 @@ const CartItems = () => {
     
         try {
             // Create order request to the backend
-            const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
             const res = await fetch(`${BASE_URL}/create-order`, {
                 method: 'POST',

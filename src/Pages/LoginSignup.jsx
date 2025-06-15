@@ -12,6 +12,7 @@ const LoginSignup = () => {
   const changeHandler = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
   const login = async () => {
     console.log('Login Func executed', formData);
