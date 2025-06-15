@@ -1,0 +1,40 @@
+.complaint-page {
+    margin: 40px;
+    width: 580px;
+    height: 650px;
+    background: white;
+    margin: auto;
+    padding: 60px 90px;
+    background: linear-gradient(180deg,#FFCAC4 0%,#e1ffea22 90%);
+    align-items: center;
+}
+.complaint-page h2{
+    text-align: center;
+}
+
+.complaint-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.complaint-page textarea {
+    height: 100px;
+}
+.complaint-page label{
+    margin-top: 50px;
+    display: contents;
+}
+.complaint-page button {
+    width: 150px;
+    padding: 10px;
+    background-color: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.complaint-page button:hover {
+    background-color: red;
+}

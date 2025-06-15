@@ -1,0 +1,18 @@
+.orders-container {
+    padding: 20px;
+}
+
+.orders-list {
+    margin-top: 20px;
+}
+
+.order-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.order-item h3, .order-item h4 {
+    margin-bottom: 10px;
+}

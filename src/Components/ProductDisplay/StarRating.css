@@ -1,0 +1,9 @@
+.star-rating {
+    font-size: 24px; /* Adjust size as needed */
+    color: #ccc; /* Default star color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.star.filled {
+    color: #ffcc00; /* Color for filled stars */
+}
