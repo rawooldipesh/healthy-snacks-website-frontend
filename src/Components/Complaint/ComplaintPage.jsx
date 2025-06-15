@@ -11,8 +11,11 @@ const ComplaintPage = () => {
     // Fetch the username and email from the backend using the token
     useEffect(() => {
         const authToken = localStorage.getItem('auth-token');
+        const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
+
         if (authToken) {
-            fetch('http://localhost:4000/getuser', {
+
+            fetch(`${BASE_URL}/getuser`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${authToken}`, // Correctly set the Authorization header
@@ -53,7 +56,7 @@ const ComplaintPage = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:4000/complaints', {
+            const response = await fetch(`${BASE_URL}/complaints`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

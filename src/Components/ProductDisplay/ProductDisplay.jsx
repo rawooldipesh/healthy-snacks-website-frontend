@@ -12,10 +12,11 @@ const ProductDisplay = (props) => {
     const [reviews, setReviews] = useState([]);
     const [reviewInput, setReviewInput] = useState('');
     const [rating, setRating] = useState(0);
+    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
     useEffect(() => {
         // Fetch reviews for the product
-        fetch(`http://localhost:4000/reviews/${product.id}`)
+        fetch(`${BASE_URL}/reviews/${product.id}`)
             .then((response) => response.json())
             .then((data) => {
                 if (data.success) {
@@ -50,7 +51,7 @@ const ProductDisplay = (props) => {
         }
     
         if (reviewInput.trim() !== '' && rating > 0) {
-            fetch('http://localhost:4000/addreview', {
+            fetch(`${BASE_URL}/addreview`, {
                 method: 'POST',
                 headers: {
                     'auth-token': authToken,

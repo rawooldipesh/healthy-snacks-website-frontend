@@ -29,7 +29,9 @@ const CartItems = () => {
     
         try {
             // Create order request to the backend
-            const res = await fetch('http://localhost:4000/create-order', {
+            const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
+
+            const res = await fetch(`${BASE_URL}/create-order`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -51,7 +53,7 @@ const CartItems = () => {
                         alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}. Your Order Has Been Successfully Placed.`);
                         
                         // Trigger backend to send email after successful payment
-                        fetch('http://localhost:4000/payment-success', {
+                        fetch(`${BASE_URL}/payment-success`, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

@@ -5,10 +5,11 @@ export const ShopContext = createContext(null);
 const ShopContextProvider = (props) => {
     const [all_product, setAll_Product] = useState([]);
     const [cartItems, setCartItems] = useState({}); // Start with an empty object
+    const BASE_URL = "https://healthy-snacks-website-backend.onrender.com";
 
     // Fetch all products and initialize default cart
     useEffect(() => {
-        fetch('http://localhost:4000/allproducts')
+        fetch(`${BASE_URL}/allproducts`)
             .then((response) => response.json())
             .then((data) => {
                 setAll_Product(data);
@@ -57,7 +58,7 @@ const ShopContextProvider = (props) => {
         const authToken = localStorage.getItem('auth-token');
         
         if (authToken) {
-            fetch('http://localhost:4000/addtocart', {
+            fetch(`${BASE_URL}/addtocart`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -107,7 +108,7 @@ const ShopContextProvider = (props) => {
         const authToken = localStorage.getItem('auth-token');
         
         if (authToken) {
-            fetch('http://localhost:4000/removefromcart', {
+            fetch(`${BASE_URL}/removefromcart`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
