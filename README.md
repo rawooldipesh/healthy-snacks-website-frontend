@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 🍫 Healthy Snacks Website - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend of the Healthy Snacks Website built using **React.js**. It allows users to browse healthy snack products, add them to cart, and place orders.
 
-## Available Scripts
+## 🚀 Live Website
+🌐 [Visit Frontend](healthy-snacks-website-frontend-csoaqyccs.vercel.app)
 
-In the project directory, you can run:
+## 🧰 Tech Stack
+- React.js
+- React Router DOM
+- Context API
+- CSS Modules
 
-### `npm start`
+## 💡 Features
+- Browse products by categories (Sweets, Namkeen, Khakras)
+- Add to and remove items from cart
+- View total cart value and place order
+- Fully responsive layout
+- Payment Options interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📦 Getting Started (Local Development)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repository
+git clone https://github.com/your-username/healthy-snacks-website-frontend.git
+cd healthy-snacks-website-frontend
 
-### `npm test`
+2. Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+3. Update Backend URL
+If you're running the backend locally, change all backend URLs in the code from:
 
-### `npm run build`
+https://healthy-snacks-website-backend.onrender.com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+http://localhost:4000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This includes:
+files such as
+ShopContext.js
 
-### `npm run eject`
+Popular.jsx
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+PlaceOrder.jsx (or wherever the backend is called)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the app
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📁 Folder Structure
 
-## Learn More
+frontend/
+│
+├── build/                     # Production-ready build output
+├── node_modules/              # Project dependencies
+├── public/                    # Static files (e.g., index.html, icons)
+├── src/                       # Source code
+│   ├── Components/            # Reusable UI components
+│   ├── Context/               # React Context API related files (global state)
+│   ├── Pages/                 # Application page components (views/screens)
+│   ├── App.css                # Global styles for the App component
+│   ├── App.js                 # Root component
+│   ├── App.test.js            # Tests for App component
+│   ├── index.css              # Global CSS styles
+│   ├── index.js               # ReactDOM rendering and app bootstrap
+│   ├── logo.svg               # Application logo
+│   ├── reportWebVitals.js     # Performance measuring setup
+│   └── setupTests.js          # Testing environment setup
+│
+├── .env                       # Environment variables
+├── .gitignore                 # Files/folders to be ignored by Git
+├── package.json               # Project configuration and dependencies
+├── package-lock.json          # Exact versions of installed dependencies
+└── README.md                  # Project documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 License
+This project is licensed under the MIT License
