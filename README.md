@@ -3,7 +3,7 @@
 This is the frontend of the Healthy Snacks Website built using **React.js**. It allows users to browse healthy snack products, add them to cart, and place orders.
 
 ## 🚀 Live Website
-🌐 [Visit Frontend](healthy-snacks-website-frontend-csoaqyccs.vercel.app)
+🌐 [Visit Frontend](https://healthy-snacks-website-frontend.vercel.app/)
 
 ## 🧰 Tech Stack
 - React.js
